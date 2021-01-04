@@ -1,0 +1,277 @@
+/* ------------- */
+/* GENERAL STYLE */
+/* ------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background: black;
+}
+
+h1, h2, h3, p {
+  line-height: 1.35rem;
+  letter-spacing: 0.02rem;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+p {
+  width: 70%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  border: none;
+  border-radius: 30%;
+  height: 2px;
+  width: 40%;
+  background-color: darkgrey;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* ------------ */
+/* HEADER STYLE */
+/* ------------ */
+
+.imglogo {
+  margin-top: 1rem;
+  max-width:25%;
+  max-height:25%;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
+
+.navbar {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: auto;
+  line-height: 1.25rem;
+}
+
+.navbar a {
+  display: block;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+  .navbar {
+    float: right;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+  }
+  .navbar a {
+    display: inline-block;
+    width: auto;
+    padding: 8px;
+  }
+  .imglogo {
+    margin-left: 3rem;
+  }
+}
+
+.home {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.headerimg {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ------------------ */
+/* ritmusjatekok resz */
+/* ------------------ */
+
+.bal, .jobb{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.jobb {
+  margin-bottom: 1rem;
+}
+.ritmusleiras, .h2 {
+  margin-top: -1rem;
+}
+
+.ritmusleiras ul {
+  text-align: center;
+}
+
+.ritmuskepek {width:100%; height:0px; padding-bottom: 125%; overflow:hidden; position:relative; }
+.ritmuskepek img{ 
+  height: auto;
+  width: 100%;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  position: absolute; 
+  animation: ritmuskepek 30s infinite;
+  opacity:0;}
+
+@keyframes ritmuskepek {25%{opacity:1;} 40%{opacity:0;}}
+.ritmuskepek img:nth-child(6){animation-delay:0s;}
+.ritmuskepek img:nth-child(5){animation-delay:5s;}
+.ritmuskepek img:nth-child(4){animation-delay:10s;}
+.ritmuskepek img:nth-child(3){animation-delay:15s;}
+.ritmuskepek img:nth-child(2){animation-delay:20s;}
+.ritmuskepek img:nth-child(1){animation-delay:25s;}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section1 > .jobb { order: 1; }
+.section1 > .bal { order: 2; }
+
+@media screen and (min-width: 800px) {
+  .section1 {
+    text-align: center;
+    display: block;
+  }
+  .bal {
+    display: inline-block;
+    width: 40%;
+    height: auto;
+  }
+  .jobb {
+    margin-bottom: 0;
+    display: inline-block;
+    width: 40%;
+  }
+  .ritmusleiras {
+    width:100%; height:0px; padding-bottom: 125%; overflow:hidden; position:relative;
+  }
+  .ritmusleiras h2 {
+    margin-top: 3px;
+  }
+}
+
+/* ------- */
+/* galeria */
+/* ------- */
+
+.galerycenter {
+  margin-top: 2rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.kepek {width:100%; height:0px; padding-bottom: 145%; overflow:hidden; position:relative; }
+.kepek img{ 
+  height: auto;
+  width: 100%;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  position: absolute; 
+  animation: kepek 15s infinite;
+  opacity:0;}
+
+@keyframes kepek {25%{opacity:1;} 40%{opacity:0;}}
+.kepek img:nth-child(3){animation-delay:0s;}
+.kepek img:nth-child(2){animation-delay:5s;}
+.kepek img:nth-child(1){animation-delay:10s;}
+
+@media screen and (min-width: 800px) {
+  .galerycenter {
+    width: 30%;
+  }
+}
+
+/* -------------- */
+/* kapcsolat rész */
+/* -------------- */
+
+.kapcsolat {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.kapcsolat, .p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.contact {
+  margin-bottom: 1.5rem;
+}
+
+.kapcsolatlistacenter{
+  width: 70%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto
+}
+.kapcsolatlista {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  margin-right: auto;
+}
+.kapcsolatlista a {
+  color: white;
+  text-decoration: none;
+}
+.kapcsolatlista a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 800px) {
+  .kapcsolatlistacenter {
+    display: block;
+    width: 40%;
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+  .kapcsolat {
+    display: block;
+    width: 50%;
+  }
+  .contactflexbox {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .contactflexbox > .kapcsolat { order: 1;}
+  .contactflexbox > .kapcsolatlistacenter { order: 2;}
+}
+
+/* ------ */
+/* Footer */
+/* ------ */
+
+footer {
+  width: 100%;
+  height: 35px;
+  background-color: gray;
+  margin-top: 2rem;
+}
